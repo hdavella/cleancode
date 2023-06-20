@@ -83,6 +83,8 @@
     console.log({ isRedFruit: isRedFruit('cereza'), fruit: 'cereza' }); // true
     console.log({ isRedFruit: isRedFruit('piña'), fruit: 'piña' }); // true
 
+    console.warn('%cHola mundo', `color:lightblue; background:green; font-size:30px`);
+
     //getFruitsByColor
     console.log({ redFruits: getFruitsByColor('red') }); // ['manzana', 'fresa']
     console.log({ yellowFruits: getFruitsByColor('yellow') }); // ['piña', 'banana']

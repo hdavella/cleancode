@@ -1,21 +1,25 @@
 (()=>{
 
-    // SIN PRINCIPIO DE RESPONSABILIDAD UNICA
+// CON PRINCIPIO DE RESPONSABILIDAD UNICA
 
         type Gender = 'M'|'F';
 
+        interface PersonProperties{
+            birthdate: Date;
+            gender   : Gender;
+            name     : string;
+        }
+
         class Person{
-            // public name: string;
-            // public gender: Gender;
-            // public birthdate: Date;
+            public birthdate: Date;
+            public gender   : Gender;
+            public name     : string;
 
-            constructor(public name: string, 
-                        public gender: Gender, 
-                        public birthdate: Date){
+            constructor( {name, gender, birthdate}: PersonProperties){
 
-                // this.name= name;
-                // this.birthdate= birthdate;
-                // this.gender= gender;
+                this.birthdate= birthdate;
+                this.gender   = gender;
+                this.name     = name;
             }
         }
 
